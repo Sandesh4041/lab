@@ -33,9 +33,11 @@ $data=[
     }
     echo "Before sort";
     display($data);
-    usort($data,function($a,$b){
-        return $b['id']<=>$a['id'];
-    });
+    // usort($data,function($a,$b){
+    //     return $b['id']<=>$a['id'];
+    // });
+
+    arsort($data);
     echo "After sort";
     display($data);
     ?>
